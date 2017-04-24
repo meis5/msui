@@ -1,0 +1,2 @@
+webpackJsonp([0],{"./index.js":function(e,o,n){"use strict";Object.defineProperty(o,"__esModule",{value:!0});var s=n("./common.js");console.log(s.default)},1:function(e,o,n){e.exports=n("./index.js")}},[1]);
+//# sourceMappingURL=index.js.map
