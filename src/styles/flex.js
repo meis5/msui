@@ -1,9 +1,8 @@
 export default `
-.fl {
+.fl, .fl-r, .fl-c, .fl-w {
     display: flex;
 }
 
-// transition
 .fl-1 {
     flex: 1 1 auto;
 }
@@ -12,7 +11,6 @@ export default `
     flex: 0 1 auto;
 }
 
-// direction
 .fl-r {
     flex-direction: row-reverse;
 }
@@ -21,12 +19,10 @@ export default `
     flex-direction: column;
 }
 
-// wrap
 .fl-w {
     flex-wrap: wrap;
 }
 
-// justify-content
 .jc-s {
     justify-content: flex-start;
 }
@@ -47,7 +43,6 @@ export default `
     justify-content: space-between;
 }
 
-// align-items
 .ai-s {
     align-items: flex-start;
 }
@@ -68,7 +63,6 @@ export default `
     align-items: baseline;
 }
 
-// align-content
 .ac-s {
     align-content: flex-start;
 }
@@ -93,7 +87,6 @@ export default `
     align-content: stretch;
 }
 
-// align self
 .as-a {
     align-self: auto;
 }

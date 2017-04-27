@@ -6,15 +6,15 @@ export const UPDATE_LOCALE = 'UPDATE_LOCALE'
 // --------------------------------------------------
 export const updateLocale = locale => ({
   type: UPDATE_LOCALE,
-  request: { method: 'post', url: '/api/updateLocale', data: { locale } },
+  payload: locale,
 })
 
 // Reducer
 // --------------------------------------------------
 export default (state = {}, action) => {
   switch (action.type) {
-    case `${UPDATE_LOCALE}_SUCCESS`:
-      return { ...state, locale: action.payload.locale, [action.payload.locale]: action.payload.value }
+    case UPDATE_LOCALE:
+      return { ...state, locale: action.payload }
     default:
       return state
   }
