@@ -11,7 +11,9 @@ const dst = path.resolve(__dirname, './assets')
 const development = {
   devtool: 'eval-cheap-module-source-map',
   devServer: {
+    host: '0.0.0.0',
     port: 9995,
+    disableHostCheck: true,
     https: false,
     compress: true,
     historyApiFallback: true,
